@@ -5,4 +5,4 @@ nombres_max = 20
 
 while i <= nombres_max:
     print(i)
-    i += 1
+    i += 2
