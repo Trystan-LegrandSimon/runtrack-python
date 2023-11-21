@@ -1,8 +1,7 @@
 #!/usr/local/bin/python3
 
 i = 0
-nombres_max = 20
 
-while i <= nombres_max:
+while i <= 20:
     print(i)
     i += 1
