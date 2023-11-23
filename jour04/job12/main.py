@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 
-def tri_selection(liste = 0):
+def tri_selection(liste = []):
     
     try:
+        if liste == []:
+            raise ValueError("Les paramètres ne peuvent pas être vides")
+        
         print(f"La liste de base est : {liste}")
+
         nombre_elements_liste = 0
         for element in liste:
             nombre_elements_liste += 1
@@ -23,7 +27,7 @@ def tri_selection(liste = 0):
         return liste
     
     except:
-        print("Veuillez rentrer une liste de nombre pour pouvoir les trier dans l'ordre croissant.")
+        print(" ⚠️​  ", "ERREUR : Veuillez rentrer une liste de nombre pour pouvoir les trier dans l'ordre croissant.")
 
 L = [64, 34, 25, 12, 22, 11, 90]
 tri_selection(L)

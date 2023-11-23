@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 
-def arrondir_et_trier(liste = ["-> liste vide <-"]):
+def arrondir_et_trier(liste = []):
 
     try:
+        if liste == []:
+            raise ValueError("Les paramètres ne peuvent pas être vides")
+        
         print(f"La liste de base est : \n-> {liste}\n")
 
         def arrondir(nombre):
