@@ -26,4 +26,4 @@ def tri_selection(liste = 0):
         print("Veuillez rentrer une liste de nombre pour pouvoir les trier dans l'ordre croissant.")
 
 L = [64, 34, 25, 12, 22, 11, 90]
-resultat = tri_selection(L)
+tri_selection(L)
