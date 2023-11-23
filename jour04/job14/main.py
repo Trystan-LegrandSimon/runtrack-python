@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def my_long_word(number_integer: int = 0, chain_character: str = ""):
    
     print(f"Le chiffre/nombre entier est : \n{number_integer}")
