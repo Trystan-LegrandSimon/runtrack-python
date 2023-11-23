@@ -2,6 +2,7 @@
 
 def somme_valeurs_paires(liste):
     somme = 0
+
     for nombre in liste:
         if nombre % 2 == 0:
             somme += nombre

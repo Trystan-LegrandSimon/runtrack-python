@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def supprimer_doublons(liste = 0):
+    
     try:
         print(f"La liste de base est : {liste}")
 
