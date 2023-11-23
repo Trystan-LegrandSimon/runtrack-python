@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+
+def tri_selection(liste = 0):
+    
+    try:
+        print(f"La liste de base est : {liste}")
+        nombre_elements_liste = 0
+        for element in liste:
+            nombre_elements_liste += 1
+        print("Le nombre d'éléments dans la liste est :", nombre_elements_liste)
+
+        # Parcourir tous les éléments de la liste
+        for i in range(nombre_elements_liste):
+            # Trouver le minimum dans la liste restante
+            min_idx = i
+            for j in range(i+1, nombre_elements_liste):
+                if liste[min_idx] > liste[j]:
+                    min_idx = j
+            # Échanger le minimum trouvé avec le premier élément de la liste restante
+            liste[i], liste[min_idx] = liste[min_idx], liste[i]
+
+        print("Liste triée dans l'ordre croissant :", liste)
+        return liste
+    
+    except:
+        print("Veuillez rentrer une liste de nombre pour pouvoir les trier dans l'ordre croissant.")
+
+L = [64, 34, 25, 12, 22, 11, 90]
+resultat = tri_selection(L)
