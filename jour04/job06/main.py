@@ -16,4 +16,4 @@ print(f"Liste avant l'échange : {ma_liste}")
 # Appel de la fonction pour échanger les valeurs
 echanger_premiere_et_derniere(ma_liste)
 
-print(f"Liste après l'échange : {ma_liste}"
+print(f"Liste après l'échange : {ma_liste}")
