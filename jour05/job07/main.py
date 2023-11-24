@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def arrondir_notes(liste_notes):
     notes_arrondies = []
 
@@ -7,7 +9,7 @@ def arrondir_notes(liste_notes):
             notes_arrondies.append(note)
         else:  # Si la note est supérieure ou égale à 40, l'étudiant réussit
             multiple_suivant = ((note // 5) + 1) * 5
-            
+
             if multiple_suivant - note < 3:  # Si la note est à moins de 3 points du multiple de 5 suivant
                 notes_arrondies.append(multiple_suivant)  # On arrondit à ce multiple
             else:
