@@ -11,7 +11,7 @@ def draw_rectangle(height = 0):
         for i in range(height):
 
             if i == height - 1:
-                print( '/' + '_' * (2 * i) + '\\')
+                print('/' + '_' * (2 * i) + '\\')
             else:
                 print(' ' * (height - i - 1) + '/' + ' ' * (2 * i) + '\\')
     except:
