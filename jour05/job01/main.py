@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 
-def info_user(name = ""):
+def info_user():
+
     try:
-        if name == "":
-            raise ValueError("Les paramètres ne peuvent pas être vides")
-        
-        print(f"Hello {name}")
+        name = input("Quel est votre prénom ? ") 
+        if not name:
+            raise ValueError()
+        else:
+            print(f"Hello {name} !")
 
     except:
-        print(" ⚠️​  ", "ERREUR : Veuillez rentrer votre prénom")
+        print(" ⚠️​  ", "ERREUR : Veuillez rentrer votre prénom.")
 
-name = input("Quel est votre prénom ? ")
-info_user(name)
+info_user()
