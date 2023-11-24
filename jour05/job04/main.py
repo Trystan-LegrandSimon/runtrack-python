@@ -21,6 +21,6 @@ def draw_tapis(n=0):
         print('+' + '-' * (n + 1) + "+")
 
     except ValueError:
-        print(" ⚠️​  ERREUR : Veuillez rentrer une largeur et une hauteur non nulles.")
+        print(" ⚠️​  ", "ERREUR : Veuillez rentrer une largeur et une hauteur non nulles.")
 
 draw_tapis(10)
