@@ -10,5 +10,5 @@ def info_user(name = ""):
     except:
         print(" ⚠️​  ", "ERREUR : Veuillez rentrer votre prénom")
 
-name = "Pierre"
-info_user()
+name = input("Quel est votre prénom ? ")
+info_user(name)
