@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def my_sort(liste = []):
+    
     try:
         if liste == []:
             raise ValueError()
@@ -27,7 +28,6 @@ def my_sort(liste = []):
     
     except ValueError:
         print("⚠️​   ERREUR : Veuillez fournir une liste de nombres.")
-        return liste
 
 # Exemple d'utilisation
 ma_liste = [64, 25, 12, 22, 11]

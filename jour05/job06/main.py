@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def meters_per_week(number_steps = 0, height_steps = 0):
+    
     try:
         if number_steps and height_steps == 0:
             raise ValueError("Veuillez fournir un nombre de marche et une hauteur de marche.")
