@@ -23,4 +23,4 @@ def meters_per_week(number_steps = 0, height_steps = 0):
     except ValueError as e:
         print(f"⚠️", "ERREUR :", e)
 
-meters_per_week(10, )
+meters_per_week(10, 10)
